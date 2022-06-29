@@ -55,7 +55,7 @@ func keyPermissions() []string {
 		"Recover",
 		"Restore",
 		"Rotate",
-		"SetRotationPolicy"
+		"SetRotationPolicy",
 		"Sign",
 		"UnwrapKey",
 		"Update",
