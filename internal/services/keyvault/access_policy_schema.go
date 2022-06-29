@@ -3,7 +3,7 @@ package keyvault
 import (
 	"strings"
 
-	"github.com/Azure/azure-sdk-for-go/services/keyvault/mgmt/2021-10-01/keyvault"
+	"github.com/Azure/azure-sdk-for-go/services/keyvault/v7.1/keyvault"
 	"github.com/gofrs/uuid"
 	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/pluginsdk"
 	"github.com/hashicorp/terraform-provider-azurerm/internal/tf/validation"
@@ -48,11 +48,14 @@ func keyPermissions() []string {
 		"Delete",
 		"Encrypt",
 		"Get",
+		"GetRotationPolicy",
 		"Import",
 		"List",
 		"Purge",
 		"Recover",
 		"Restore",
+		"Rotate",
+		"SetRotationPolicy"
 		"Sign",
 		"UnwrapKey",
 		"Update",
