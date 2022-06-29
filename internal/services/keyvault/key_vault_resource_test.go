@@ -930,6 +930,8 @@ access_policy {
 `, oid)
 }
 
+// TODO: check
+
 func (KeyVaultResource) purgeProtection(data acceptance.TestData, enabled bool) string {
 	return fmt.Sprintf(`
 provider "azurerm" {
